@@ -1,0 +1,24 @@
+package day09_a_scanner;
+
+public class OrExample {
+    public static void main(String[] args) {
+
+        int apple = 5;
+        int orange = 7;
+        System.out.println(apple > 3 || orange < 5);
+        // || is short circuit operator
+        //              true || true = false because compiler does NOT execute the 2nd part
+        //              true || false = true because compiler does NOT execute the 2nd part
+        //ONLY         false || false = false because compiler  DOES execute the 2nd part
+        //             false || true = true because compiler DOES execute the 2nd part
+
+        // Q: I do not care what the 1st expression (1st part / left side) is, I want to execute 2nd pat.
+        // A: Then, I use single OR operator
+        System.out.println(apple > 3 | orange < 5);
+
+
+
+
+
+    }
+}
